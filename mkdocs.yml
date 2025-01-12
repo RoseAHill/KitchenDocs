@@ -2,3 +2,42 @@ site_name: Kitchen Docs
 site_url: https://kitchendocs.rosie-er.com
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/git-alt
+  palette: 
+    primary: green
+    accent: deep orange
+  features:
+    - navigation.footer
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.action.view
+plugins:
+  - tags:
+      enabled: true
+  - social:
+      enabled: true
+  - search:
+      separator: '(?!\b)(?=[A-Z][a-z])'
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: RoseAHill/KitchenDocs
+      branch: main
+extra:
+  social:
+    - icon: fontawesome/brands/twitch
+      link: https://www.twitch.tv/rosie_er
+    - icon: fontawesome/brands/github
+      link: https://github.com/RoseAHill
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:roseaahill@gmail.com
+      name: Contact Rosie via email
+copyright: Copyright &copy; 2016 - 2025 Rosie A Hill
+repo_url: https://github.com/RoseAHill/KitchenDocs
+edit_uri: edit/main/docs
